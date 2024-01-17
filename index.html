@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Basics</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Try out CSS</h1>
+
+    <div style="position: relative; text-align: center;">
+      <h3>Normal img</h3>
+      <img src="sample.jpg" class="img" />
+      <h3>Retina optimized img</h3>
+      <img src="sample.jpg" class="img pixelated" />
+
+      <h3>Responsive img</h3>
+      <p>Shrink the screen!</p>
+      <picture>
+        <source media="(min-width:650px)" srcset="sample.jpg" />
+        <source media="(min-width:465px)" srcset="sample_2.jpg" />
+        <img src="sample.jpg" alt="orange" class="img" />
+      </picture>
+    </div>
+
+    <br />
+
+    <h3>Iframe</h3>
+    <iframe
+      src="positioning.html"
+      title="W3Schools Free Online Web Tutorials"
+    ></iframe>
+
+    <h3>CSS properties - Pseudo class and element</h3>
+    <p id="para" class="para">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
+
+    <p class="para">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
+
+    <h3>Grid 1</h3>
+    <div class="grid-container">
+      <div class="grid-item" id="item-1">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+    </div>
+
+    <br />
+
+    <h3>Grid 2</h3>
+    <div class="container">
+      <div class="item grid-item-1">1</div>
+      <div class="item grid-item-2">2</div>
+      <div class="item grid-item-3">3</div>
+      <div class="item grid-item-4">4</div>
+      <div class="item grid-item-5">5</div>
+    </div>
+
+    <br />
+
+    <h3>Flex box 1</h3>
+    <div class="flex-container">
+      <div class="flex-item flex-item-1">1</div>
+      <div class="flex-item flex-item-2">2</div>
+      <div class="flex-item flex-item-3">3</div>
+      <div class="flex-item flex-item-4">4</div>
+      <div class="flex-item flex-item-5">5</div>
+    </div>
+
+    <br />
+    <h3>Flex box 2</h3>
+    <div class="container-2">
+      <div class="item-2">1</div>
+      <div class="item-2">2</div>
+      <div class="item-2" id="new-flex-item-3">3</div>
+      <div class="item-2">4</div>
+      <div class="item-2">5</div>
+      <div class="item-2">6</div>
+      <div class="item-2">7</div>
+      <div class="item-2">8</div>
+    </div>
+  </body>
+</html>

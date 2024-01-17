@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning</title>
+    <style>
+      .main-div {
+        position: relative;
+        border: 3px solid #3e3e3e;
+      }
+
+      .relative-div {
+        position: relative;
+        border: 1px solid black;
+        top: 20px;
+        background-color: yellow;
+      }
+
+      .fixed-div {
+        position: fixed;
+        border: 1px solid black;
+        top: 20px;
+        right: 0px;
+        background-color: lightgray;
+      }
+
+      .sticky-div {
+        position: sticky;
+        border: 1px solid black;
+        top: 0px;
+        background-color: lightseagreen;
+      }
+
+      .absolute-div {
+        position: absolute;
+        border: 1px solid black;
+        top: 0;
+        background-color: lightsteelblue;
+      }
+
+      .div {
+        opacity: 50%;
+        height: 150px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Positioning</h1>
+    <p>
+      This is how people who to style elements before flexbox and grid came into
+      picture which was hard and time consuming.
+    </p>
+    <div class="main-div">
+      <div class="sticky-div div">
+        <h3>Sticky Div</h3>
+      </div>
+
+      <div class="relative-div div">
+        <h3>Relative Div</h3>
+      </div>
+
+      <div class="fixed-div div">
+        <h3>Fixed Div</h3>
+      </div>
+
+      <div class="absolute-div div">
+        <h3>Absolute Div</h3>
+      </div>
+    </div>
+  </body>
+</html>
